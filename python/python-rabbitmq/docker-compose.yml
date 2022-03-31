@@ -1,0 +1,9 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbit-mq-example
+    container_name: rabbit-container-1
+    ports:
+      - "5672:5672" #amqp port
+      - "8080:15672" # Ui management portal
