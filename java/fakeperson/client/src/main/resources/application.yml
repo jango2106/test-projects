@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:9190/postgres"
+    username: postgres
+    password: mysecretpassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
